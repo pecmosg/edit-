@@ -192,7 +192,7 @@ int main(int argc, char* argv[]) {
 	//RFM69 ---------------------------
 	theConfig.networkId = 101;
 	theConfig.nodeId = 1;
-	theConfig.frequency = RF69_433MHZ;
+	theConfig.frequency = RF69_868MHZ;
 	theConfig.keyLength = 16;
 	memcpy(theConfig.key, "xxxxxxxxxxxxxxxx", 16);
 	theConfig.isRFM69HW = true;
