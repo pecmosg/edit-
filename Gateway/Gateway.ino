@@ -70,7 +70,7 @@ EthernetClient ethClient;
 
 // Mosquitto---------------
 #include <PubSubClient.h>
-PubSubClient client(test.mosquitto.org, 1883, callback, ethClient);
+PubSubClient client(192.168.0.107, 1883, callback, ethClient);
 #define MQTT_CLIENT_ID "arduinoClient"
 #define MQTT_RETRY 500
 int sendMQTT = 0;
