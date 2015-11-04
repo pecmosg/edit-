@@ -74,10 +74,10 @@ RFM69 radio;
 //temperature / humidity  =====================================
 #include <dht.h>
 #define DHTPIN 7     			// digital pin we're connected to
-//#define DHTTYPE DHT11     // DHT 11  (AM2302) blue one
+#define DHTTYPE DHT11     // DHT 11  (AM2302) blue one
 //#define TEMP_INTERVAL  6000
 #define TEMP_INTERVAL  3000
-#define DHTTYPE DHT22   // DHT 21 (AM2302) white one
+//#define DHTTYPE DHT22   // DHT 21 (AM2302) white one
 //structure holding DHT data
 dht DHT;
 
