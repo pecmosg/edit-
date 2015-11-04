@@ -197,7 +197,7 @@ int main(int argc, char* argv[]) {
 	memcpy(theConfig.key, "pecmosg110028225", 16);
 	theConfig.isRFM69HW = true;
 	theConfig.promiscuousMode = true;
-	theConfig.messageWatchdogDelay = 1800000; // 1800 seconds (30 minutes) between two messages 
+	theConfig.messageWatchdogDelay = 18000; // 1800 seconds (30 minutes) between two messages 
 
 	rfm69 = new RFM69();
 	rfm69->initialize(theConfig.frequency,theConfig.nodeId,theConfig.networkId);
