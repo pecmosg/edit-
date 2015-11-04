@@ -191,10 +191,10 @@ int main(int argc, char* argv[]) {
 
 	//RFM69 ---------------------------
 	theConfig.networkId = 101;
-	theConfig.nodeId = 1;
+	theConfig.nodeId = 12;
 	theConfig.frequency = RF69_868MHZ;
 	theConfig.keyLength = 16;
-	memcpy(theConfig.key, "xxxxxxxxxxxxxxxx", 16);
+	memcpy(theConfig.key, "pecmosg110028225", 16);
 	theConfig.isRFM69HW = true;
 	theConfig.promiscuousMode = true;
 	theConfig.messageWatchdogDelay = 1800000; // 1800 seconds (30 minutes) between two messages 
