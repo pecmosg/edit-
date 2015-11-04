@@ -37,14 +37,14 @@
 //RFM69  --------------------------------------------------------------------------------------------------
 #include <RFM69.h>
 #include <SPI.h>
-#define NODEID        13    //unique for each node on same network
+#define NODEID        12    //unique for each node on same network
 #define NETWORKID     101  //the same on all nodes that talk to each other
 #define GATEWAYID     1
 //Match frequency to the hardware version of the radio on your Moteino (uncomment one):
-#define FREQUENCY   RF69_433MHZ
-//#define FREQUENCY   RF69_868MHZ
+//define FREQUENCY   RF69_433MHZ
+#define FREQUENCY   RF69_868MHZ
 //#define FREQUENCY     RF69_915MHZ
-#define ENCRYPTKEY    "xxxxxxxxxxxxxxxx" //exactly the same 16 characters/bytes on all nodes!
+#define ENCRYPTKEY    "pecmosg110028225" //exactly the same 16 characters/bytes on all nodes!
 #define IS_RFM69HW    //uncomment only for RFM69HW! Leave out if you have RFM69W!
 #define ACK_TIME      30 // max # of ms to wait for an ack
 #define LED           9  // Moteinos have LEDs on D9
